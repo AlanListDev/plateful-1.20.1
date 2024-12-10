@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "plateful",
+	"version": "${version}",
+	"name": "Plateful",
+	"description": "Adds a lot of food! by FlareShock",
+	"authors": [
+		"FlareShock!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/plateful/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.flareshock.plateful.Plateful"
+		],
+		"client": [
+			"net.flareshock.plateful.PlatefulClient"
+		],
+		"fabric-datagen": [
+			"net.flareshock.plateful.PlatefulDataGenerator"
+		]
+	},
+	"mixins": [
+		"plateful.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
